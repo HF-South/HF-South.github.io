@@ -1,11 +1,8 @@
-<script type="text/javascript">
-var password = "trikko";
-var x = prompt("Enter in the password "," ");
-if (x.toLowerCase() == password) {
- alert("Come right in \n \n You've entered in the right password");
- window.location = "Aboutme.html";
-}
-else {
- window.location = "bad.htm";
-}
-</script>
+<form action="/tutorial/action.html">
+  <label for="fullname">Username</label><br />
+  <input type="text" id="username" name="username"><br />
+  <label for="password">Password</label><br />
+  <input type="password" id="password" name="password"><br />
+
+  <input type="submit" value="Login">
+</form>
