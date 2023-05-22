@@ -1,7 +1,3 @@
-<!-- 
-    Added onsubmit attribute to form so that it will trigger the JS function (authenticate). 
-    if the function returns false it will prevent the form from submitting 
--->
 <form action="loggedin.html" onsubmit="return authenticate()">
       <label for="username">Username</label>
       <!-- added IDs to the inputs -->
@@ -34,7 +30,7 @@
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if(username == "abcd" && password == "pass12345"){
+        if(username == "Admin" && password == "Trikko"){
           authorised = true;
         }else{ // username or password do not match
           authorised = false;
