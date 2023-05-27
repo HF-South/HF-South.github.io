@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="https://hf-south.github.io/Coming-soon.css">
-<div class="container">
-  <p class="glitch">
-    <span aria-hidden="true">Coming Soon</span>
-    Coming Soon
-    <span aria-hidden="true">Coming Soon</span>
-  </p>
-</div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webshop</title>
+  <style>
+    /* CSS styles for the webshop */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #fff;
+      margin: 0;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin-top: 0;
+    }
+
+    .product p {
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to our Webshop</h1>
+    <!-- Add your logo or any other header content here -->
+  </header>
+
+  <nav>
+    <!-- Add your navigation menu here -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Add your product listings here -->
+    <section>
+      <h2>Featured Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Price: $19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>Price: $29.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Add your footer content here -->
+    <p>&copy; 2023 Webshop. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
