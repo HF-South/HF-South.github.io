@@ -1,29 +1,103 @@
 <!DOCTYPE html>
-<html>
-   <link rel="stylesheet" type="text/css" href="https://hf-south.github.io/style.css">
-<link href="https://fonts.cdnfonts.com/css/varino" rel="stylesheet">
+<html lang="en">
 
-<style>@import url('https://fonts.cdnfonts.com/css/varino');</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webshop - Contact</title>
+  <style>
+    /* CSS styles for the webshop */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    </style>
-  </head>
-  <html lang="en">
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+    }
 
- <!-- Content of the site -->
-    <head>
-      <title>Contact</title>
-      <meta charset="UTF-8">
-    </head>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>South.com</title>
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-   
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
 
-    <body>
-      <center>
-        <h1>Contact me</h1>
-       <a id='profile-link' href="https://discord.com/users/693428744622309418" target="_blank" class="contact-details"><img src="https://github.com/HF-South/HF-South.github.io/blob/main/discord-black-icon-1_jgon69%20(1).png?raw=true"></a> <a id='profile-link' href="https://github.com/hf-south" target="_blank" class="contact-details"><img src="https://github.com/HF-South/HF-South.github.io/blob/main/GitHub-Mark-64px%20(1).png?raw=true"></a> <a href="mailto:southerngrasseater@gmail.com" class="contact-details" ><img src="https://github.com/HF-South/HF-South.github.io/blob/main/email%20(1).png?raw=true"></a>
-        <h3>U can contact me in discord, github and/or send me a mail<h3>
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    section {
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: #fff;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to our Webshop</h1>
+    <!-- Add your logo or any other header content here -->
+  </header>
+
+  <nav>
+    <!-- Add your navigation menu here -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Add your contact form here -->
+    <section>
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Add your footer content here -->
+    <p>&copy; 2023 Webshop. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
