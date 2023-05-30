@@ -1,52 +1,97 @@
 <!DOCTYPE html>
-<link rel="shortcut icon" type="image/x-icon" href="https://photos.google.com/search/_tra_/photo/AF1QipOal-ZetE_RIpClksXy27KKJVXoPi3EjQ4DW4_X">
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Login</title> 
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="title"><span>Login</span></div>
-        <form action="https://hf-south.github.io/Coming-soon.html" onsubmit="return authenticate()">
-          <div class="row">
-            <i class="fas fa-user"></i>
-             <input
-        id="username"
-        type="text"
-        placeholder="Enter Username"
-        name="username"
-        required/>
-          </div>
-          <div class="row">
-            <i class="fas fa-lock"></i>
-            <input
-        id="password"
-        type="password"
-        placeholder="Enter Password"
-        name="password"
-        required
-      />
-          </div>
-          <div class="row button">
-            <input type="submit" value="Login">
-          </div>
-          <div class="signup-link"> <a href="Apply-for-the-watinglist.html">apply for the waiting list</a></div>
-        </form>
-      </div>
-    </div>
-  </body>
-</html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+  <style>
+    /* CSS styles for the password-protected login page */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .container {
+      background-color: #000;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+    }
+
+    button {
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #808080;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .forgot-password a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Enter Password</h2>
+    <form id="login-form">
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
     </form>
-    
- <script>
-<!-- code by https://www.html-code-generator.com -->
-document.write(unescape('%20%20%20%3C%73%63%72%69%70%74%3E%0A%20%20%20%20%0A%20%20%20%20%2F%2F%46%6F%6C%6C%6F%77%69%6E%67%20%66%75%6E%63%74%69%6F%6E%20%67%65%74%73%20%76%61%6C%75%65%73%20%6F%66%20%74%68%65%20%75%73%65%72%6E%61%6D%65%20%61%6E%64%20%70%61%73%73%77%6F%72%64%20%66%69%65%6C%64%73%20%61%6E%64%20%63%68%65%63%6B%73%20%74%6F%20%73%65%65%20%69%66%20%74%68%65%79%20%6D%61%74%63%68%20%61%20%68%61%72%64%20%63%6F%64%65%64%20%75%73%65%72%6E%61%6D%65%20%61%6E%64%20%70%61%73%73%77%6F%72%64%20%0A%20%20%20%20%20%20%66%75%6E%63%74%69%6F%6E%20%61%75%74%68%65%6E%74%69%63%61%74%65%28%29%7B%0A%20%20%20%20%20%20%20%20%76%61%72%20%61%75%74%68%6F%72%69%73%65%64%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%2F%2F%67%65%74%20%69%6E%70%75%74%20%76%61%6C%75%65%73%0A%20%20%20%20%20%20%20%20%76%61%72%20%75%73%65%72%6E%61%6D%65%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%75%73%65%72%6E%61%6D%65%22%29%2E%76%61%6C%75%65%3B%0A%20%20%20%20%20%20%20%20%76%61%72%20%70%61%73%73%77%6F%72%64%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%70%61%73%73%77%6F%72%64%22%29%2E%76%61%6C%75%65%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%2F%2F%63%68%65%63%6B%20%74%6F%20%73%65%65%20%69%66%20%74%68%65%20%70%61%73%73%77%6F%72%64%20%61%6E%64%20%75%73%65%72%6E%61%6D%65%20%6D%61%74%63%68%0A%20%20%20%20%20%20%20%20%69%66%28%28%75%73%65%72%6E%61%6D%65%20%3D%3D%20%22%41%64%6D%69%6E%22%20%26%26%20%70%61%73%73%77%6F%72%64%20%3D%3D%20%22%47%72%61%73%73%22%29%20%7C%7C%20%28%75%73%65%72%6E%61%6D%65%20%3D%3D%20%22%46%61%6C%63%6F%6E%58%4E%45%22%20%26%26%20%70%61%73%73%77%6F%72%64%20%3D%3D%20%22%66%61%6C%63%31%32%33%34%78%6E%65%40%23%22%29%20%7C%7C%28%75%73%65%72%6E%61%6D%65%20%3D%3D%20%22%74%65%73%74%22%20%26%26%20%70%61%73%73%77%6F%72%64%20%3D%3D%20%22%47%72%61%73%73%22%29%20%7C%7C%20%28%75%73%65%72%6E%61%6D%65%20%3D%3D%20%22%4E%6F%76%75%73%22%20%26%26%20%70%61%73%73%77%6F%72%64%20%3D%3D%20%22%4E%6F%76%75%73%31%32%33%22%29%20%7C%7C%20%28%75%73%65%72%6E%61%6D%65%20%3D%3D%20%22%6B%69%6F%75%61%6E%65%22%20%26%26%20%70%61%73%73%77%6F%72%64%20%3D%3D%20%22%31%32%30%35%22%29%29%7B%0A%20%20%20%20%20%20%20%20%20%20%61%75%74%68%6F%72%69%73%65%64%20%3D%20%74%72%75%65%3B%0A%20%20%20%20%20%20%20%20%7D%65%6C%73%65%7B%20%2F%2F%20%75%73%65%72%6E%61%6D%65%20%6F%72%20%70%61%73%73%77%6F%72%64%20%64%6F%20%6E%6F%74%20%6D%61%74%63%68%0A%20%20%20%20%20%20%20%20%20%20%61%75%74%68%6F%72%69%73%65%64%20%3D%20%66%61%6C%73%65%3B%0A%20%20%20%20%20%20%20%20%20%20%2F%2F%61%6C%65%72%74%20%75%73%65%72%0A%20%20%20%20%20%20%20%20%20%20%61%6C%65%72%74%28%22%53%6F%72%72%79%2C%20%70%61%73%73%77%6F%72%64%20%61%6E%64%2F%6F%72%20%75%73%65%72%6E%61%6D%65%20%69%73%2F%61%72%65%20%69%6E%63%6F%72%72%65%63%74%2E%22%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%2F%2F%72%65%74%75%72%6E%20%72%65%73%75%6C%74%0A%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%61%75%74%68%6F%72%69%73%65%64%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2F%73%63%72%69%70%74%3E'))
-</script>
+    <div class="forgot-password">
+      <a href="Apply-for-the-watinglist.html">{Click here to get on the waitinglist}</a>
+    </div>
 
+    <script>
+      document.getElementById("login-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var password = document.getElementById("password").value;
+        if (password === "Grass") {
+          window.location.href = "Home.html"; // Redirect to the dashboard page after successful login
+        } else {
+          alert("Incorrect password. Please try again.");
+        }
+      });
+    </script>
+  </div>
+</body>
+
+</html>
