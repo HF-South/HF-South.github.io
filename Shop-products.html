@@ -52,7 +52,7 @@
 
     .product-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
     }
 
@@ -61,6 +61,10 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .product img {
@@ -113,7 +117,7 @@
   <main>
     <!-- Add your product listings here -->
     <section>
-      <h2>Products</h2>
+     <center> <h2>Products</h2>  </center>
       <div class="product-list">
         <div class="product">
           <img src="product1.jpg" alt="Product 1">
