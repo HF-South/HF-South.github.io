@@ -4,100 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webshop - Contact</title>
+  <title>Contact Me</title>
   <style>
-    /* CSS styles for the webshop */
+    /* CSS styles for the Contact Me page */
     body {
       background-color: #000;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    header {
-      background-color: #000;
-      text-align: center;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
       text-align: center;
     }
 
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav a {
+    h1 {
+      font-size: 48px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
       color: #fff;
-      text-decoration: none;
+      text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+      animation: glow 2s ease-in-out infinite alternate;
     }
 
-    main {
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    @keyframes glow {
+      from {
+        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+      }
+
+      to {
+        text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+      }
     }
 
-    section {
-      text-align: center;
+    .contact-info {
+      margin-bottom: 40px;
     }
 
-    h1, h2, h3 {
-      color: #fff;
+    .contact-info p {
+      font-size: 18px;
+      color: #a9a9a9;
+      margin-bottom: 10px;
     }
 
-    footer {
-      background-color: #000;
-      text-align: center;
+    .contact-form {
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
       padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+    }
+
+    .contact-form button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to our Webshop</h1>
-    <!-- Add your logo or any other header content here -->
-  </header>
+  <div class="container">
+    <h1>Contact Me</h1>
 
-  <nav>
-    <!-- Add your navigation menu here -->
-    <ul>
-      <li><a href="Shop-home.html">Home</a></li>
-      <li><a href="Shop-products.html">Products</a></li>
-      <li><a href="Shopping-cart.html">Cart</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <!-- Add your contact form here -->
-    <section>
-      <h2>Contact Us</h2>
-      <form action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <!-- Add your footer content here -->
-    <p>&copy; 2023 Webshop. All rights reserved.</p>
-  </footer>
+    <div class="contact-info">
+      <p>Email: southerngrasseater+contact@gmail.com</p>
+      <p>Country: Netherlands</p>
+  </div>
 </body>
 
 </html>
