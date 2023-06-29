@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: var(--bg-color, #fff);
-  background-image: url('path/to/new-image.jpg'); /* Updated background image */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckqwCMS8kOPsNU8msRHiWjcx2dCp-GFvoIg&usqp=CAU'); /* Updated background image */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
