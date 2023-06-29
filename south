@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Linktree</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>My Linktree</h1>
+
+  <div class="links">
+    <div class="link">
+      <a href="https://example.com">Link 1</a>
+    </div>
+    <div class="link">
+      <a href="https://example.com">Link 2</a>
+    </div>
+    <div class="link">
+      <a href="https://example.com">Link 3</a>
+    </div>
+    <div class="link">
+      <a href="https://example.com">Link 4</a>
+    </div>
+  </div>
+</body>
+</html>
